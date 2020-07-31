@@ -8,4 +8,4 @@ Team members:
 
 
 Description:
-Online proctoring and face tracking is useful to authenticate if the candidate is the actual person taking the examination or assessment. 
+Online proctoring and face tracking is useful to authenticate if the candidate is the actual person taking the examination or assessment...
