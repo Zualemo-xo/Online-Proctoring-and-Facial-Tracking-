@@ -151,7 +151,10 @@ p { line-height: 1.9; }
     box-shadow: 0 0 1px rgba(255,255,255,.8);
 }
 
-.tm-content-title { font-size: 1.5rem; }
+.tm-content-title { 
+    font-family: monospace;
+    font-size: 1.5rem; 
+}
 hr { border-top: 1px solid white; }
 
 .btn {
