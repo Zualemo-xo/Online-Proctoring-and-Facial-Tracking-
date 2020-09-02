@@ -24,6 +24,8 @@ ul { padding: 0; }
 a:hover { text-decoration: none; }
 button:focus { outline: none; }
 p { line-height: 1.9; }
+i { line-break: 1.9;
+    text-align: justify;}
 .tm-logo { margin-right: 20px; }
 .tm-slogan { font-size: 0.8rem; }
 
