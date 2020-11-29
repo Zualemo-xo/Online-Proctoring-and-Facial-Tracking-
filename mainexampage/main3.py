@@ -6,7 +6,8 @@ import mysql.connector
 #import pyrebase
 app = Flask(__name__)
 #app.secret_key=os.urandom(24)
-conn=mysql.connector.connect(host="remotemysql.com",user="tNBDOIkDVl",password="p8VTjXJsIG",database="tNBDOIkDVl")
+conn=mysql.connector.connect(host="remotemysql.com",user="",password="",database="")
+#enter valid credentials from onlinemysql
 cursor=conn.cursor()
 
 @app.route('/faculty')
