@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("https://images.unsplash.com/photo-1559329007-40df8a9345d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");  /*url("aboutimg1.jpg"); url("{{ url_for('static',filename='img/aboutimg1.jpg') }}"); */
+    background-size: cover;
+}
+
+.container {
+    width: 1280px;
+    height: calc(100vh - 195px);
+    margin: 180px auto 0;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+}
+.container .box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+}
+.container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+.container .box .imgBox img {
+    width: 100%;
+    transition: 2s;
+    transform: scale(1.2);
+}
+.container .box:hover .imgBox img {
+    transform: scale(1);
+}
+.container .box .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    transition: 1s;
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(1.5);
+}
+.container .box:hover .details {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+}
+.container .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+}
+.container .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #262626;
+}
+.container .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #262626;
+}
+.container .box .details .content p.ex1
+{
+  margin-left:10%;
+}
+.container .box .details .content p.ex2
+{
+  margin-left:10%;
+}
+.container .box .details .content p.ex3
+{
+  margin-left:10%;
+}
+</style>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="shortcut icon"
+            href="../../favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>About</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="imgBox"><img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="" /></div>
+                <div class="details">
+                    <div class="content">
+                        <h2>HISTORY</h2>
+                        <p>
+                            <I>NARU RESTAURANT</I> was started in 1980.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox"><img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="" /></div>
+                <div class="details">
+                    <div class="content">
+                        <h2>BRANCHES</h2>
+                        <p>
+                          It has 26 branches in India</p><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox"><img src="https://images.unsplash.com/photo-1502301103665-0b95cc738daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="" /></div>
+                <div class="details">
+                    <div class="content">
+                        <h2>SERVICE</h2>
+                        <p>
+                            In case of any issues contact 199924737
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

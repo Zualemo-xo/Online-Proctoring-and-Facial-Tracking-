@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Xamtime</title>
+    <style>
+    body{
+      background-image: url("C:/Users/Maheysh V/Desktop/STUDY/VideoStreamingFlask-master/templates/bgpine.jpg");
+       background-color: rgb(192,192,192);
+    }
+	img {
+  	 /* display: block; */
+  	/* margin-left: 70%;
+  	margin-right: auto; */
+    position: -webkit-sticky;
+    position:sticky;
+    top: 75;
+	  width: 25%;
+	}
+    </style>
+
+    <!-- <script>
+    function myFunction()
+    {
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode("Water");
+    node.appendChild(textnode);
+    document.getElementById("myList").appendChild(node);
+    } -->
+
+    <script>
+    function dabbamarks()
+    {
+      alert("You have secured:5/5 marks!");
+    }
+    </script>
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-light text-center">
+      <h3>General Knowledge Quiz</h3>
+    </nav>
+    <div class="container">
+    <!-- <h1 align="center">General Knowledge Quiz</h1> -->
+    <div class="border border-dark shadow-lg p-4  mt-4 mb-4 bg-white">
+    <h4> Answer the questions carefully</h4>
+    <span><img id="bg" class="float-right" src="{{ url_for('video_feed') }}" alt="video stream not working"></span>
+    <!-- <form method="POST" action="C:\Users\Maheysh V\Desktop\STUDY\VideoStreamingFlask-master\templates\results.php"> -->
+          <!-- dd_Qsn Number-dropdown -->
+    <form method="POST" action="index1.html">
+
+
+      1)The capital of India is:<br><input type="text" name="t1" id="t1"><br><br>
+
+      2)The star of the Solar System is:<br><input type="text" name="t2" id="t2"><br><br>
+
+      3)1+1=<br><input type="radio" name="r1_option1" id="r1_option1">2<br><br>
+      <input type="radio" name="r1_option2" id="r1_option2">1<br><br>
+      <input type="radio" name="r1_option3" id="r1_option3">11<br><br>
+      <input type="radio" name="r1_option4" id="r1_option4">0110<br><br>
+
+      4)Continents of the world include:<br><input type="checkbox" name="c1_option1" id="c1_option1">Asia<br><br>
+      <input type="checkbox" name="c1_option2" id="c1_option2">India<br><br>
+      <input type="checkbox" name="c1_option3" id="c1_option3">Australia<br><br>
+      <input type="checkbox" name="c1_option4" id="c1_option4">China<br><br>
+
+      5)Choose for the following:<br>
+      A)Current Prime Minister of India:<br>
+      <select id="dd1" name="dd_1"><br>
+      <option value="dd1_option1">John Cena</option><br>
+      <option value="dd1_option2">Narendra Modi</option><br>
+      <option value="dd1_option3">Powerstar</option><br>
+      <option value="dd1_option4">Ram Nath Kovind</option><br>
+      </select><br><br>
+
+      B)who is the best faculty for Software Engineering?<br>
+      <select id="dd2" name="dd_2"><br>
+      <option value="dd2_option1">Ilakiyaselvan Sir</option><br>
+      <option value="dd2_option2">None</option><br>
+      </select><br>
+      <br><br>
+    <!-- <ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+    </ul>
+    <button onclick="myFunction()">Try it</button> -->
+    <button class="submit" type="submit" name="submit" id="submit" onclick="dabbamarks()">Finish Test</button>
+
+      <!-- <input type="Submit" value="Finish test" id="test_submit" name="test_submit"> -->
+
+    </form>
+
+    <!-- <div class="instructions">
+        <h1>The Movie Quiz</h1>
+
+    </div>
+
+    <form>
+        <div id="1">
+            <p><strong>Question 1</strong></p>
+            <p>Where does “It’s a Wonderful Life” take place?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton2">Bedford Hills</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(1, this.value)" name="radiobutton2">Bedford Falls</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(1, this.value)" name="radiobutton2">Bedford Lake</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(1, this.value)" name="radiobutton2">Bedford City</p>
+        </div>
+
+        <div id="2">
+            <p><strong>Question 2</strong></p>
+            <p>In “The Godfather,” who was murdered in the causeway?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Luca Brasi</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Moe Greene</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">Sonny</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">Paulie</p>
+        </div>
+
+        <div id="3">
+            <p><strong>Question 3</strong></p>
+            <p>Where did Princess Leia hide the stolen plans for the Death Star?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(3, this.value)" name="radiobutton2">In C-3PO</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(3, this.value)" name="radiobutton2">In a pocket in the hem of her white gown</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(3, this.value)" name="radiobutton2">In the Millennium Falcon</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(3, this.value)" name="radiobutton2">In R2-D2</p>
+        </div>
+
+        <div id="4">
+            <p><strong>Question 4</strong></p>
+            <p>In which of the following films did Robert Duvall NOT appear?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(4, this.value)" name="radiobutton2">To Kill a Mockingbird</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(4, this.value)" name="radiobutton2">The Godfather</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(4, this.value)" name="radiobutton2">Tender Mercies</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(4, this.value)" name="radiobutton2">One Flew Over the Cuckoo’s Nest</p>
+        </div>
+
+        <div id="5">
+            <p><strong>Question 5</strong></p>
+            <p>Who was Scarlett O’Hara’s second husband?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(5, this.value)" name="radiobutton2">Frank Kennedy</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(5, this.value)" name="radiobutton2">Rhett Butler</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(5, this.value)" name="radiobutton2">Ashley Wilkes</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(5, this.value)" name="radiobutton2">Charles Hamilton</p>
+        </div>
+        <p>
+
+
+
+        <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button"></p>
+
+
+    </form> -->
+    <!-- <form  method="post" action="/marks">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="ss">Your score:</label>
+        <div id="marks" name="marks"></div>
+
+
+        <input type="submit" id="submit" value="Submit" onclick="result()">
+    </form> -->
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+    <!-- </div> -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-light">
+      Vitexam
+    </nav>
+  </body>
+</html>
